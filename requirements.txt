@@ -1,0 +1,23 @@
+# ==============================================================================
+# Requirements for Local AI Agent (Personal Executive Assistant)
+# Python Compatibility: 3.10 - 3.12 (Tested on Python 3.12.1 Windows 11)
+# ==============================================================================
+
+# Core Application Libraries
+neonize==0.12.4          # WhatsApp client automation (whatsmeow-based)
+keyring==25.7.0          # Secure credential storage via Windows Credential Manager
+requests==2.34.2         # HTTP client for Ollama local API integration
+segno==1.6.6             # QR code rendering for WhatsApp terminal login
+
+# Windows-Specific Platform Dependencies
+pywin32-ctypes==0.2.3; sys_platform == "win32"      # Required by keyring on Windows
+python-magic-bin==0.4.14; sys_platform == "win32"   # Required by neonize for file mime-types on Windows
+
+# Key Sub-dependencies (pinned for reproducibility and reliability)
+cryptography>=42.0.0
+httpx>=0.27.0
+protobuf>=4.25.0
+pillow>=10.0.0
+phonenumbers>=8.13.0
+pycryptodome>=3.20.0
+tqdm>=4.66.0

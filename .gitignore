@@ -1,0 +1,39 @@
+# WhatsApp linked-device session database & WAL/journal files (contains auth keys)
+session.db
+session.db-shm
+session.db-wal
+session.db-journal
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+# Runtime draft state, logs, and local transfer folders
+pending_drafts.json
+pending_approvals.txt
+agent.log
+*.log
+pip_tmp/
+agent_bundle/
+
+# Python virtual environment & bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Secrets & environment files (keep credentials in Windows keyring, not git)
+.env
+.env.*
+*.pem
+*.key
+
+# IDE & Windows OS files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
