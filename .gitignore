@@ -10,6 +10,7 @@ session.db-journal
 
 # Runtime draft state, logs, and local transfer folders
 pending_drafts.json
+category_summaries.json
 pending_approvals.txt
 agent.log
 *.log
